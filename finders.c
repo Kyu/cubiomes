@@ -11,6 +11,7 @@
 
 #if defined(_WIN32)
 // #include <direct.h>
+#include <unistd.h>
 #define IS_DIR_SEP(C) ((C) == '/' || (C) == '\\')
 #define stat _stat
 #define mkdir(P,X) _mkdir(P)
