@@ -10,7 +10,7 @@
 #include <sys/stat.h>
 
 #if defined(_WIN32)
-#include <direct.h>
+// #include <direct.h>
 #define IS_DIR_SEP(C) ((C) == '/' || (C) == '\\')
 #define stat _stat
 #define mkdir(P,X) _mkdir(P)
